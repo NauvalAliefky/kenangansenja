@@ -24,7 +24,7 @@ $orders = $orderController->getOrders();
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;700&display=swap" rel="stylesheet">
   <script src="https://unpkg.com/feather-icons"></script>
   <link rel="stylesheet" href="../../assets/css/style.css">
-  <title>Orders - Kopi Kenangan Senja</title>
+  <title>Orders - Gacoan Kang</title>
   <style>
     body {
       font-family: 'Poppins', sans-serif;
@@ -34,7 +34,7 @@ $orders = $orderController->getOrders();
 <body class="bg-gray-900 text-gray-200">
   <nav class="fixed top-0 left-0 right-0 z-50 bg-gray-800 bg-opacity-90 py-4 px-6 flex justify-between items-center shadow-md">
     <a href="#" class="text-2xl font-bold italic text-white">
-      kenangan<span class="text-yellow-500">senja</span>
+      Gacoan<span class="text-yellow-500">Kang</span>
     </a>
     <div class="flex space-x-4 items-center text-white">
       <span class="hidden md:block font-medium"><?= htmlspecialchars($user['name']); ?></span>
