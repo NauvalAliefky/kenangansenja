@@ -34,7 +34,7 @@ $orders = $orderController->getOrders();
 <body class="bg-gray-900 text-gray-200">
   <nav class="fixed top-0 left-0 right-0 z-50 bg-gray-800 bg-opacity-90 py-4 px-6 flex justify-between items-center shadow-md">
     <a href="#" class="text-2xl font-bold italic text-white">
-      Gacoan<span class="text-yellow-500">Kang</span>
+      Gacoan<span class="text-red-500">Kang</span>
     </a>
     <div class="flex space-x-4 items-center text-white">
       <span class="hidden md:block font-medium"><?= htmlspecialchars($user['name']); ?></span>
@@ -94,7 +94,7 @@ $orders = $orderController->getOrders();
                     <form action="../../controllers/ConfirmOrderController.php" method="POST">
                       <input type="hidden" name="order_id" value="<?= $order['id']; ?>">
                       <input type="hidden" name="status" value="confirmed">
-                      <button type="submit" class="bg-yellow-500 hover:bg-yellow-600 text-white text-xs font-semibold py-1 px-3 rounded-full">
+                      <button type="submit" class="bg-red-500 hover:bg-yellow-600 text-white text-xs font-semibold py-1 px-3 rounded-full">
                         Confirm
                       </button>
                     </form>

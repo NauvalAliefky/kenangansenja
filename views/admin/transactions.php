@@ -34,7 +34,7 @@ $transactions = $transactionController->getTransactions();
 <body class="bg-gray-100">
     <nav class="fixed top-0 left-0 right-0 z-50 bg-gray-800 bg-opacity-90 py-4 px-6 flex justify-between items-center shadow-md">
         <a href="#" class="text-2xl font-bold italic text-white">
-            Gacoan<span class="text-yellow-500">Kang</span>
+            Gacoan<span class="text-red-500">Kang</span>
         </a>
         <div class="flex space-x-4 items-center text-white">
             <span class="hidden md:block font-medium"><?= htmlspecialchars($user['name']); ?></span>
@@ -94,7 +94,7 @@ $transactions = $transactionController->getTransactions();
                                         <form action="../../controllers/ConfirmPaymentController.php" method="POST">
                                             <input type="hidden" name="transaction_id" value="<?= htmlspecialchars($transaction['transaction_id']); ?>">
                                             <input type="hidden" name="status" value="paid">
-                                            <button type="submit" class="bg-yellow-500 hover:bg-yellow-600 text-white text-xs font-semibold py-1 px-3 rounded-full">
+                                            <button type="submit" class="bg-red-500 hover:bg-yellow-600 text-white text-xs font-semibold py-1 px-3 rounded-full">
                                                 Paid
                                             </button>
                                         </form>

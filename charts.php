@@ -34,7 +34,7 @@
 
     .cart-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
       gap: 20px;
     }
 
@@ -66,7 +66,7 @@
     }
 
     .item-price {
-      color: #ecc94b;
+      color: #F44336;
       font-size: 1.1rem;
     }
 
