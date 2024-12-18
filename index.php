@@ -16,17 +16,17 @@ $menus = $menuController->getMenus();
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;700&display=swap" rel="stylesheet">
   <script src="https://unpkg.com/feather-icons"></script>
   <link rel="stylesheet" href="assets/css/style.css">
-  <title>Gacoan</title>
+  <title>Dapur Tulip</title>
 </head>
-<body class="bg-grayj-900 text-white font-poppins">
+<body class="bg-gray-900 text-white font-poppins">
   <nav class="fixed top-0 left-0 right-0 z-50 bg-gray-800 bg-opacity-80 py-4 px-6 flex justify-between items-center border-b border-gray-700">
-    <a href="#" class="text-2xl font-bold italic text-white">Gacoan<span class="text-red-500">Kang</span></a>
+    <a href="#" class="text-2xl font-bold italic text-white">Dapur<span class="text-red-300">Tulip</span></a>
     <div class="hidden md:flex space-x-6">
-      <a href="#home" class="hover:text-red-500">Home</a>
-      <a href="#about" class="hover:text-red-500">About Us</a>
-      <a href="#menu" class="hover:text-red-500">Menu</a>
-      <a href="#products" class="hover:text-red-500">Product</a>
-      <a href="#contact" class="hover:text-red-500">Contact</a>
+      <a href="#home" class="hover:text-red-200">Home</a>
+      <a href="#about" class="hover:text-red-200">About Us</a>
+      <a href="#menu" class="hover:text-red-200">Menu</a>
+      <a href="#products" class="hover:text-red-200">Product</a>
+      <a href="#contact" class="hover:text-red-200">Contact</a>
     </div>
     <div class="flex space-x-4">
       <a href="#" id="search-menu" class="hover:text-red-500"><i data-feather="search"></i></a>
@@ -34,12 +34,12 @@ $menus = $menuController->getMenus();
       <a href="#" id="menu-button" class="md:hidden hover:text-red-500"><i data-feather="menu"></i></a>
       <a href="#" class="hidden md:hidden hover:text-red-500" id="close-button"><i data-feather="x"></i></a>
     </div>
-    <div class="absolute top-full right-7 bg-white px-4 py-2 w-80 text-gray-900 flex items-center hidden" id="search-form">
+    <div class="absolute top-full right-7 bg-white px-4 py-2 w-80 text-gray-900 flex items-center hidden-none" id="search-form">
       <input type="search" id="search-box" placeholder="Search here..." class="w-full p-2 focus:outline-none" id="search-button">
       <label for="search" class="cursor-pointer"><i data-feather="search"></i></label>
     </div>
   </nav>
-
+  
   <aside class="fixed top-0 h-full w-64 bg-white text-black shadow-lg z-50 md:hidden sidebar" id="sidenav">
     <nav class="flex flex-col h-full space-y-4 p-8">
       <a href="#home" class="hover:text-red-500">Home</a>
@@ -50,10 +50,10 @@ $menus = $menuController->getMenus();
     </nav>
   </aside>
 
-  <section id="home" class="min-h-screen bg-cover bg-center flex items-center justify-center" style="background-image: url('assets/img/gacoan.png');">
+  <section id="home" class="min-h-screen bg-cover bg-center flex items-center justify-center" style="background-image: url('assets/img/Group 64.png');">
     <div class="bg-black bg-opacity-50 p-10 text-center rounded-lg mx-6">
-      <h1 class="text-4xl font-bold mb-4">Mari Nikmati Gacoan <span class="text-red-500">Kang</span></h1>
-      <p class="text-lg">Gacoan bikin nagih dijamin 100% No Fake Fake 🚫🚫</p>
+      <h1 class="text-4xl font-bold mb-4">Mari Nikmati Makanan <span class="text-red-300">Berkualitas</span></h1>
+      <p class="text-lg">Makanan Berkualitas Yang Bikin Nagih 🚫🚫</p>
       <div class="mt-6 flex gap-3 justify-center">
         <a href="orders.php" class="p-3 bg-white text-gray-900 hover:bg-gray-400">See Order</a>
         <button id="login-button" class="p-3 bg-red-500 hover:bg-blue-400">Login</button>
@@ -82,20 +82,20 @@ $menus = $menuController->getMenus();
 
       <span class="text-gray-900">Don't have an account? <a href="views/auth/register.php" class="text-blue-600">Sign up</a></span>
 
-      <button type="submit" class="mt-4 w-full py-2 bg-red-500 hover:bg-yellow-400 text-white font-semibold rounded-lg transition duration-300 ease-in-out">LOGIN</button>
+      <button type="submit" class="mt-4 w-full py-2 bg-red-500 hover:bg-red-300 text-white font-semibold rounded-lg transition duration-300 ease-in-out">LOGIN</button>
     </form>
   </div>
 
-  <section id="about" class="py-20 px-6 bg-gray-800">
+  <section id="about" class="py-20 px-6 bg-red-900">
   <div class="container mx-auto">
     <div class="text-center mb-12">
       <h2 class="text-3xl font-bold text-white">
-        <span class="text-red-500">Tentang</span> Kami
+        <span class="text-red-300">Tentang</span> Kami
       </h2>
     </div>
     <div class="md:flex md:items-center space-y-8 md:space-y-0 md:space-x-32">
       <div class="md:w-1/2">
-        <img src="assets/img/gacoan.jpg" alt="Tentang Kami" class="rounded-lg shadow-lg w-full h-auto">
+        <img src="assets/img/makanan1.jpg" alt="Tentang Kami" class="rounded-lg shadow-lg w-full h-auto">
       </div>
       <div class="md:w-1/2 space-y-6 text-white">
         <p>Mie Gacoan merupakan salah satu restoran yang paling populer selama beberapa tahun belakangan ini. Bagaimana tidak, restoran yang menjual mie sebagai menu utamanya ini memiliki banyak peminat dan menjadi yang paling laris jika dibandingkan dengan restoran sejenis lainnya. </p>
@@ -111,8 +111,8 @@ $menus = $menuController->getMenus();
 
 <section id="menu" class="py-20 px-6 bg-gray-900">
     <div class="text-center mb-10">
-      <h2 class="text-3xl font-bold"><span class="text-red-500">Menu</span> Kami</h2>
-      <p>Silahkan pesan menu di bawah ini, di sini terdapat minuman dan makanan dari Gacoan Kang.</p>
+      <h2 class="text-3xl font-bold"><span class="text-red-300">Menu</span> Kami</h2>
+      <p>Silahkan pesan menu di bawah ini, di sini terdapat minuman dan makanan dari Dapur Tulip.</p>
     </div>
     <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
       <?php foreach ($menus as $menu): ?>
@@ -129,7 +129,7 @@ $menus = $menuController->getMenus();
               <i data-feather="shopping-cart"></i>
             </a>
             <button
-              class="order-button bg-red-500 p-3 hover:bg-yellow-400 transition duration-300 ease-in-out flex items-center justify-center"
+              class="order-button bg-red-500 p-3 hover:bg-red-300 transition duration-300 ease-in-out flex items-center justify-center"
               data-id="<?= $menu['id']; ?>">
               Pesan Sekarang
             </button>
@@ -160,13 +160,13 @@ $menus = $menuController->getMenus();
       <label for="table_number" class="block mt-4">Nomor Meja</label>
       <input type="text" id="table_number" name="table_number" class="w-full p-2 mt-1 focus:outline-none text-gray-900" required>
 
-      <button type="submit" class="mt-4 w-full py-2 bg-red-500 hover:bg-yellow-400 text-white font-semibold rounded-lg transition duration-300 ease-in-out">BUAT PESANAN</button>
+      <button type="submit" class="mt-4 w-full py-2 bg-red-500 hover:bg-red-300 text-white font-semibold rounded-lg transition duration-300 ease-in-out">BUAT PESANAN</button>
     </form>
   </div>
 
-  <section id="products" class="py-20 px-6 bg-gray-800">
+  <section id="products" class="py-20 px-6 bg-red-900">
     <div class="text-center mb-10">
-      <h2 class="text-3xl font-bold"><span class="text-red-500">Produk Unggulan</span> Kami</h2>
+      <h2 class="text-3xl font-bold"><span class="text-red-300">Produk Unggulan</span> Kami</h2>
       <p>Produk Best Seller dari Gacoan Kang Kami 😘🙏.</p>
     </div>
     <div class="grid grid-cols-1 md:grid-cols-7 gap-1">
@@ -175,16 +175,16 @@ $menus = $menuController->getMenus();
           <a href="#" class="text-red-500 bg-gray-800 p-3 rounded-full hover:bg-red-500 hover:text-gray-900 transition duration-300 ease-in-out">
             <i data-feather="shopping-cart"></i>
           </a>
-          <a href="storage/images/gobaksodor.jpg" class="text-red-500 bg-gray-800 p-3 rounded-full hover:bg-red-500 hover:text-gray-900 transition duration-300 ease-in-out">
+          <a href="storage/images/leci.jpg" class="text-red-500 bg-gray-800 p-3 rounded-full hover:bg-red-500 hover:text-gray-900 transition duration-300 ease-in-out">
             <i data-feather="eye"></i>
           </a>
         </div>
-        <img src="storage/images/gobaksodor.jpg" alt="Product 1" class="mb-1 rounded-lg">
-        <h3 class="text-xl font-semibold">Es Gobak Sodor</h3>
+        <img src="assets/img/leci.jpg" alt="Product 1" class="mb-1 rounded-lg">
+        <h3 class="text-xl font-semibold">Es Leci</h3>
         <div class="flex justify-center space-x-0 text-red-500 my-2">
           <i data-feather="star" class="filled"></i><i data-feather="star"></i><i data-feather="star"></i><i data-feather="star"></i><i data-feather="star"></i>
         </div>
-        <p class="text-red-500">IDR 10K <span class="line-through text-gray-400">IDR 55K</span></p>
+        <p class="text-red-500">IDR 8K <span class="line-through text-gray-400">IDR 10K</span></p>
       </div>
 
       <div class="bg-gray-900 p-6 rounded-lg shadow-lg text-center">
@@ -192,16 +192,16 @@ $menus = $menuController->getMenus();
           <a href="#" class="text-red-500 bg-gray-800 p-3 rounded-full hover:bg-red-500 hover:text-gray-900 transition duration-300 ease-in-out">
             <i data-feather="shopping-cart"></i>
           </a>
-          <a href="storage/images/images.jpg" class="text-red-500 bg-gray-800 p-3 rounded-full hover:bg-red-500 hover:text-gray-900 transition duration-300 ease-in-out">
+          <a href="assets/img/strawberry.jpg" class="text-red-500 bg-gray-800 p-3 rounded-full hover:bg-red-500 hover:text-gray-900 transition duration-300 ease-in-out">
             <i data-feather="eye"></i>
           </a>
         </div>
-        <img src="storage/images/images.jpg" alt="Product 1" class="mb-1 rounded-lg">
-        <h3 class="text-xl font-semibold">Es Gobak Sodor</h3>
+        <img src="assets/img/strawberry.jpg" alt="Product 1" class="mb-1 rounded-lg">
+        <h3 class="text-xl font-semibold">Es strawberry</h3>
         <div class="flex justify-center space-x-0 text-red-500 my-2">
           <i data-feather="star" class="filled"></i><i data-feather="star"></i><i data-feather="star"></i><i data-feather="star"></i><i data-feather="star"></i>
         </div>
-        <p class="text-red-500">IDR 12K <span class="line-through text-gray-400">IDR 55K</span></p>
+        <p class="text-red-500">IDR 8K <span class="line-through text-gray-400">IDR 10K</span></p>
       </div>
 
       <div class="bg-gray-900 p-6 rounded-lg shadow-lg text-center">
@@ -209,16 +209,16 @@ $menus = $menuController->getMenus();
           <a href="#" class="text-red-500 bg-gray-800 p-3 rounded-full hover:bg-red-500 hover:text-gray-900 transition duration-300 ease-in-out">
             <i data-feather="shopping-cart"></i>
           </a>
-          <a href="storage/images/imeg.jpg" class="text-red-500 bg-gray-800 p-3 rounded-full hover:bg-red-500 hover:text-gray-900 transition duration-300 ease-in-out">
+          <a href="assets/img/lemontea.jpg" class="text-red-500 bg-gray-800 p-3 rounded-full hover:bg-red-500 hover:text-gray-900 transition duration-300 ease-in-out">
             <i data-feather="eye"></i>
           </a>
         </div>
-        <img src="storage/images/imeg.jpg" alt="Product 1" class="mb-1 rounded-lg">
-        <h3 class="text-xl font-semibold">Es Gobak Sodor</h3>
+        <img src="assets/img/lemontea.jpg" alt="Product 1" class="mb-1 rounded-lg">
+        <h3 class="text-xl font-semibold">Es Lemon Tea</h3>
         <div class="flex justify-center space-x-0 text-red-500 my-2">
           <i data-feather="star" class="filled"></i><i data-feather="star"></i><i data-feather="star"></i><i data-feather="star"></i><i data-feather="star"></i>
         </div>
-        <p class="text-red-500">IDR 10K <span class="line-through text-gray-400">IDR 55K</span></p>
+        <p class="text-red-500">IDR 8K <span class="line-through text-gray-400">IDR 10K</span></p>
       </div>
 
       <div class="bg-gray-900 p-6 rounded-lg shadow-lg text-center">
@@ -226,16 +226,67 @@ $menus = $menuController->getMenus();
           <a href="#" class="text-red-500 bg-gray-800 p-3 rounded-full hover:bg-red-500 hover:text-gray-900 transition duration-300 ease-in-out">
             <i data-feather="shopping-cart"></i>
           </a>
-          <a href="storage/images/kelek.jpg" class="text-red-500 bg-gray-800 p-3 rounded-full hover:bg-red-500 hover:text-gray-900 transition duration-300 ease-in-out">
+          <a href="assets/img/greentea.jpg" class="text-red-500 bg-gray-800 p-3 rounded-full hover:bg-red-500 hover:text-gray-900 transition duration-300 ease-in-out">
             <i data-feather="eye"></i>
           </a>
         </div>
-        <img src="storage/images/kelek.jpg" alt="Product 1" class="mb-1 rounded-lg">
-        <h3 class="text-xl font-semibold">Es Gobak Sodor</h3>
+        <img src="assets/img/greentea.jpg" alt="Product 1" class="mb-1 rounded-lg">
+        <h3 class="text-xl font-semibold">Es Green Tea</h3>
         <div class="flex justify-center space-x-0 text-red-500 my-2">
           <i data-feather="star" class="filled"></i><i data-feather="star"></i><i data-feather="star"></i><i data-feather="star"></i><i data-feather="star"></i>
         </div>
-        <p class="text-red-500">IDR 10K <span class="line-through text-gray-400">IDR 55K</span></p>
+        <p class="text-red-500">IDR 8K <span class="line-through text-gray-400">IDR 10K</span></p>
+      </div>
+
+      <div class="bg-gray-900 p-6 rounded-lg shadow-lg text-center">
+        <div class="flex justify-center gap-4 mb-4">
+          <a href="#" class="text-red-500 bg-gray-800 p-3 rounded-full hover:bg-red-500 hover:text-gray-900 transition duration-300 ease-in-out">
+            <i data-feather="shopping-cart"></i>
+          </a>
+          <a href="assets/img/mangga.jpg" class="text-red-500 bg-gray-800 p-3 rounded-full hover:bg-red-500 hover:text-gray-900 transition duration-300 ease-in-out">
+            <i data-feather="eye"></i>
+          </a>
+        </div>
+        <img src="assets/img/mangga.jpg" alt="Product 1" class="mb-1 rounded-lg">
+        <h3 class="text-xl font-semibold">Es Mangga</h3>
+        <div class="flex justify-center space-x-0 text-red-500 my-2">
+          <i data-feather="star" class="filled"></i><i data-feather="star"></i><i data-feather="star"></i><i data-feather="star"></i><i data-feather="star"></i>
+        </div>
+        <p class="text-red-500">IDR 8K <span class="line-through text-gray-400">IDR 10K</span></p>
+      </div>
+
+      <div class="bg-gray-900 p-6 rounded-lg shadow-lg text-center">
+        <div class="flex justify-center gap-4 mb-4">
+          <a href="#" class="text-red-500 bg-gray-800 p-3 rounded-full hover:bg-red-500 hover:text-gray-900 transition duration-300 ease-in-out">
+            <i data-feather="shopping-cart"></i>
+          </a>
+          <a href="assets/img/coklat.jpg" class="text-red-500 bg-gray-800 p-3 rounded-full hover:bg-red-500 hover:text-gray-900 transition duration-300 ease-in-out">
+            <i data-feather="eye"></i>
+          </a>
+        </div>
+        <img src="assets/img/coklat.jpg" alt="Product 1" class="mb-1 rounded-lg">
+        <h3 class="text-xl font-semibold">Es Coklat</h3>
+        <div class="flex justify-center space-x-0 text-red-500 my-2">
+          <i data-feather="star" class="filled"></i><i data-feather="star"></i><i data-feather="star"></i><i data-feather="star"></i><i data-feather="star"></i>
+        </div>
+        <p class="text-red-500">IDR 8K <span class="line-through text-gray-400">IDR 10K</span></p>
+      </div>
+
+      <div class="bg-gray-900 p-6 rounded-lg shadow-lg text-center">
+        <div class="flex justify-center gap-4 mb-4">
+          <a href="#" class="text-red-500 bg-gray-800 p-3 rounded-full hover:bg-red-500 hover:text-gray-900 transition duration-300 ease-in-out">
+            <i data-feather="shopping-cart"></i>
+          </a>
+          <a href="assets/img/lemontea.jpg" class="text-red-500 bg-gray-800 p-3 rounded-full hover:bg-red-500 hover:text-gray-900 transition duration-300 ease-in-out">
+            <i data-feather="eye"></i>
+          </a>
+        </div>
+        <img src="assets/img/lemontea.jpg" alt="Product 1" class="mb-1 rounded-lg">
+        <h3 class="text-xl font-semibold">Es Teh Ori</h3>
+        <div class="flex justify-center space-x-0 text-red-500 my-2">
+          <i data-feather="star" class="filled"></i><i data-feather="star"></i><i data-feather="star"></i><i data-feather="star"></i><i data-feather="star"></i>
+        </div>
+        <p class="text-red-500">IDR 5K <span class="line-through text-gray-400">IDR 10K</span></p>
       </div>
 
     </div>
@@ -248,7 +299,7 @@ $menus = $menuController->getMenus();
   <section id="contact" class="py-20 px-6 bg-gray-900">
     <div class="text-center mb-10">
       <h2 class="text-3xl font-bold"><span class="text-red-500">Kontak</span> Kami</h2>
-      <p>Jika ada saran silahkan tulis nama dan alamat email di bawah ini Terima Kasih🙏🙏.</p>
+      <p>Jika ada saran silahkan tulis nama, email  dan alamar anda di bawah ini Terima Kasih🙏🙏.</p>
     </div>
     <div class="md:flex md:space-x-6">
     <iframe class="w-full md:w-1/2 h-64 rounded-lg mb-6 md:mb-0" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d506016.81218316243!2d110.2494417!3d-7.762616!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a59bfcb25c1d5%3A0xaff9c0300b8b31e6!2sMie%20Gacoan%20Babarsari!5e0!3m2!1sid!2sid!4v1733449011450!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>      <div class="md:w-1/2">
@@ -262,17 +313,21 @@ $menus = $menuController->getMenus();
             <input type="email" id="email" placeholder="Email" class="w-full p-2 text-gray-900 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500">
           </div>
           <div class="mb-4">
+            <label for="email" class="block text-sm font-semibold mb-1">Alamat</label>
+            <input type="alamat" id="alamat" placeholder="Alamat" class="w-full p-2 text-gray-900 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500">
+          </div>
+          <div class="mb-4">
             <label for="message" class="block text-sm font-semibold mb-1">Pesan</label>
             <textarea id="message" rows="4" placeholder="Tulis pesan..." class="w-full p-2 text-gray-900 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500"></textarea>
           </div>
-          <button type="submit" class="w-full bg-red-500 text-gray-900 font-semibold py-2 rounded-lg hover:bg-yellow-400 transition duration-300">Kirim Pesan</button>
+          <button type="submit" class="w-full bg-red-500 text-gray-900 font-semibold py-2 rounded-lg hover:bg-red-300 transition duration-300">Kirim Pesan</button>
         </form>
       </div>
     </div>
   </section>
 
   <footer class="bg-gray-800 py-6 text-center">
-    <p class="text-gray-400">&copy; 2024 <span class="text-red-500">Gacoan Kang.</span> All rights reserved.</p>
+    <p class="text-gray-400">&copy; 2024 <span class="text-red-500">Dapur Tulip.</span> All rights reserved.</p>
     <div class="mt-2 text-center">
       <a href="#" class="text-gray-400 hover:text-red-500 mx-2">Privacy Policy | Terms of Service</a>
     </div>

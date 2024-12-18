@@ -57,7 +57,7 @@ $menus = $menuController->getMenus();
   </aside>
 
   <div class="absolute right-10 top-20 cursor-pointer">
-    <button id="modal-button" class="flex items-center gap-2 py-2 px-4 bg-red-500 hover:bg-yellow-400 text-white text-sm font-medium shadow-md focus:outline-none focus:ring-2 focus:ring-yellow-300">
+    <button id="modal-button" class="flex items-center gap-2 py-2 px-4 bg-red-500 hover:bg-red-300 text-white text-sm font-medium shadow-md focus:outline-none focus:ring-2 focus:ring-yellow-300">
       <i data-feather="shopping-cart" class="w-4 h-4"></i>
       Keranjang
     </button>
@@ -80,7 +80,7 @@ $menus = $menuController->getMenus();
             <a href="#" class="text-yellow-500 bg-gray-900 p-3 rounded-full hover:bg-red-500 hover:text-gray-900 transition duration-300 ease-in-out">
               <i data-feather="shopping-cart"></i>
             </a>
-            <button id="order-button" class="bg-red-500 p-3 hover:bg-yellow-400 transition duration-300 ease-in-out flex items-center justify-center">Pesan Sekarang</button>
+            <button id="order-button" class="bg-red-500 p-3 hover:bg-red-300 transition duration-300 ease-in-out flex items-center justify-center">Pesan Sekarang</button>
           </div>
           <img src="../../storage/images/<?= $menu['menu_image']; ?>" alt="<?= $menu['menu_name']; ?>" class="rounded-lg mb-4 w-full h-48 object-cover">
           <h3 class="text-xl font-semibold text-white"><?= $menu['menu_name']; ?></h3>
@@ -110,7 +110,7 @@ $menus = $menuController->getMenus();
       <label for="table_number" class="block mt-4">Nomor Meja</label>
       <input type="text" id="table_number" name="table_number" class="w-full p-2 mt-1 focus:outline-none text-gray-900" required>
 
-      <button type="submit" class="mt-4 w-full py-2 bg-red-500 hover:bg-yellow-400 text-white font-semibold rounded-lg transition duration-300 ease-in-out">BUAT PESANAN</button>
+      <button type="submit" class="mt-4 w-full py-2 bg-red-500 hover:bg-red-300 text-white font-semibold rounded-lg transition duration-300 ease-in-out">BUAT PESANAN</button>
     </form>
   </div>
 

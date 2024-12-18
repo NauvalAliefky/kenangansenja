@@ -57,7 +57,7 @@ $menus = $menuController->getMenus();
   </aside>
 
   <div class="absolute right-10 top-20 cursor-pointer">
-    <button id="modal-button" class="py-2 px-4 bg-red-500 hover:bg-yellow-400 text-xs">Add Menu</button>
+    <button id="modal-button" class="py-2 px-4 bg-red-500 hover:bg-red-300 text-xs">Add Menu</button>
   </div>
 
   <div id="menu-modal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center px-12 z-50 opacity-0 pointer-events-none transition-opacity duration-500 ease-in-out">
@@ -77,7 +77,7 @@ $menus = $menuController->getMenus();
       <label for="menu-image" class="block mt-4">Images</label>
       <input type="file" id="menu-image" name="menu_image" class="w-full p-2 mt-1 text-gray-900" required>
 
-      <button type="submit" class="mt-4 w-full py-2 bg-red-500 hover:bg-yellow-400 text-white font-semibold rounded-lg transition duration-300 ease-in-out">SIMPAN</button>
+      <button type="submit" class="mt-4 w-full py-2 bg-red-500 hover:bg-red-300 text-white font-semibold rounded-lg transition duration-300 ease-in-out">SIMPAN</button>
     </form>
   </div>
 
@@ -98,7 +98,7 @@ $menus = $menuController->getMenus();
             <a href="../../controllers/DeleteMenuController.php?id=<?= $menu['id']; ?>" class="text-yellow-500 bg-gray-900 p-3 rounded-full hover:bg-red-500 hover:text-gray-900 transition duration-300 ease-in-out">
               <i data-feather="trash-2"></i>
             </a>
-            <a href="#" class="bg-red-500 p-3 hover:bg-yellow-400 transition duration-300 ease-in-out flex items-center justify-center edit-button"
+            <a href="#" class="bg-red-500 p-3 hover:bg-red-300 transition duration-300 ease-in-out flex items-center justify-center edit-button"
               data-menu='<?= json_encode($menu); ?>'>
               <i data-feather="edit"></i>
             </a>
@@ -131,7 +131,7 @@ $menus = $menuController->getMenus();
 
       <label for="update-menu-image" class="block mt-4">Images</label>
       <input type="file" id="update-menu-image" name="menu_image" class="w-full p-2 mt-1 text-gray-900">
-      <button type="submit" class="mt-4 w-full py-2 bg-red-500 hover:bg-yellow-400 text-white font-semibold rounded-lg transition duration-300 ease-in-out">UPDATE</button>
+      <button type="submit" class="mt-4 w-full py-2 bg-red-500 hover:bg-red-300 text-white font-semibold rounded-lg transition duration-300 ease-in-out">UPDATE</button>
     </form>
   </div>
 

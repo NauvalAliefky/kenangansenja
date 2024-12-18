@@ -1,10 +1,10 @@
 <?php
 class Connection {
     public function openConnection() {
-        $hostname = "sql210.infinityfree.com";
-        $username = "if0_37648917";
-        $password = "jsiOqMGQf2";
-        $database = "if0_37648917_kenangandia";
+        $hostname = "localhost";
+        $username = "root";
+        $password = "";
+        $database = "kenangan_senja";
 
         $conn = new mysqli($hostname, $username, $password, $database);
 
